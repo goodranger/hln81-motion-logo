@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Motion logo 5 detik Hari Listrik Nasional ke-81: Energi untuk Semua, Kemandirian bagi Indonesia.">
+<style>*,*::before,*::after{box-sizing:border-box}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font-size:14px}[hidden]{display:none!important}</style>
+</head>
+<body>
+<title>HLN 81 Motion Logo</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: one 16:9 stage (1920×1080 SVG, driven by a single render(t) timeline) above a slim transport bar. Single dark look by choice. */
+:root {
+  color-scheme: dark;
+  --night: #050b1a;
+  --navy: #0a1a3a;
+  --volt: #ffd21f;
+  --cyan: #19c3ff;
+  --merah: #e5202e;
+  --ink: #eaf2ff;
+  --dim: #8a9bbd;
+  --line: #1c2c52;
+  --f-display: "Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+}
+html, body { background: var(--night); color: var(--ink); }
+body {
+  font-family: var(--f-display);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 24px 32px;
+}
+.wrap { max-width: 1100px; margin: 0 auto; display: grid; gap: 14px; }
+.head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.head h1 { margin: 0; font-size: 1.05rem; font-weight: 800; letter-spacing: .02em; text-wrap: balance; }
+.head span { font-family: var(--f-mono); font-size: .75rem; color: var(--dim); letter-spacing: .06em; text-transform: uppercase; }
+.stage { width: 100%; max-width: 100%; aspect-ratio: 16 / 9; border-radius: 6px; overflow: hidden; border: 1px solid var(--line); background: var(--night); }
+.stage svg { display: block; width: 100%; height: 100%; }
+.bar { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.bar button {
+  font: 700 .85rem var(--f-display); color: var(--night); background: var(--volt);
+  border: 0; border-radius: 4px; padding: 9px 16px; cursor: pointer; min-width: 96px;
+}
+.bar button:focus-visible, .bar input:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+.bar input[type=range] { flex: 1 1 200px; min-width: 0; accent-color: var(--volt); }
+.time { font: 500 .8rem var(--f-mono); color: var(--dim); font-variant-numeric: tabular-nums; min-width: 9ch; }
+.loop { display: flex; align-items: center; gap: 6px; font-size: .8rem; color: var(--dim); }
+.loop input { accent-color: var(--volt); }
+.note { margin: 4px 0 0; color: var(--dim); font-size: .8rem; line-height: 1.5; max-width: 65ch; }
+
+/* capture mode (?t=2.4): stage fills the window, for rendering frames to video */
+body.capture { padding: 0; overflow: hidden; }
+body.capture .head, body.capture .bar, body.capture .note { display: none; }
+body.capture .wrap { max-width: none; }
+body.capture .stage { position: fixed; inset: 0; width: 100vw; height: 100vh; border: 0; border-radius: 0; aspect-ratio: auto; }
+</style>
+
+<div class="wrap">
+  <div class="head">
+    <h1>Hari Listrik Nasional ke-81</h1>
+    <span>Motion logo · 5 detik · 16:9</span>
+  </div>
+
+  <div class="stage">
+    <svg id="svg" viewBox="0 0 1920 1080" role="img" aria-label="Animasi logo Hari Listrik Nasional ke-81: Energi untuk Semua, Kemandirian bagi Indonesia">
+      <defs>
+        <radialGradient id="bg" cx="50%" cy="42%" r="75%">
+          <stop offset="0" stop-color="#0d2350"/>
+          <stop offset=".55" stop-color="#071430"/>
+          <stop offset="1" stop-color="#03070f"/>
+        </radialGradient>
+        <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#19c3ff" stop-opacity=".55"/>
+          <stop offset=".45" stop-color="#1a6cff" stop-opacity=".18"/>
+          <stop offset="1" stop-color="#1a6cff" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="eightGrad" x1="740" y1="235" x2="980" y2="675" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#7fe3ff"/>
+          <stop offset=".5" stop-color="#19c3ff"/>
+          <stop offset="1" stop-color="#2a6bff"/>
+        </linearGradient>
+        <linearGradient id="boltGrad" x1="1015" y1="235" x2="1175" y2="690" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#fff3a6"/>
+          <stop offset=".45" stop-color="#ffd21f"/>
+          <stop offset="1" stop-color="#ff9a00"/>
+        </linearGradient>
+        <linearGradient id="shine" x1="0" y1="0" x2="220" y2="0" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+          <stop offset=".5" stop-color="#fff" stop-opacity=".85"/>
+          <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+        </linearGradient>
+        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="14" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="softglow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="6" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <clipPath id="boltClip"><rect id="boltClipRect" x="980" y="220" width="220" height="0"/></clipPath>
+        <clipPath id="titleClip"><rect id="titleClipRect" x="460" y="740" width="0" height="90"/></clipPath>
+        <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+          <path d="M60 0H0V60" fill="none" stroke="#1c2c52" stroke-width="1"/>
+        </pattern>
+      </defs>
+
+      <rect width="1920" height="1080" fill="url(#bg)"/>
+      <rect id="gridLayer" width="1920" height="1080" fill="url(#grid)" opacity=".35"/>
+      <circle id="halo" cx="957" cy="455" r="520" fill="url(#halo)" opacity="0"/>
+
+      <g id="rings" fill="none" stroke="#19c3ff"></g>
+      <g id="sparks" fill="#ffe58a"></g>
+
+      <line id="wire" x1="0" y1="435" x2="860" y2="435" stroke="#7fe3ff" stroke-width="4" stroke-linecap="round" filter="url(#softglow)"/>
+
+      <g id="mark">
+        <path id="eightDraw" d="M860 435 A100 100 0 0 1 860 235 A100 100 0 0 1 860 435 A120 120 0 0 0 860 675 A120 120 0 0 0 860 435"
+              fill="none" stroke="#eaf6ff" stroke-width="46" stroke-linecap="round" stroke-linejoin="round" filter="url(#softglow)"/>
+        <path id="eightColor" d="M860 435 A100 100 0 0 1 860 235 A100 100 0 0 1 860 435 A120 120 0 0 0 860 675 A120 120 0 0 0 860 435"
+              fill="none" stroke="url(#eightGrad)" stroke-width="46" stroke-linecap="round" opacity="0" filter="url(#glow)"/>
+        <polygon id="bolt" points="1080,235 1165,235 1115,415 1175,415 1045,690 1078,495 1015,495"
+                 fill="url(#boltGrad)" stroke="#fff6c2" stroke-width="4" stroke-linejoin="round" clip-path="url(#boltClip)" filter="url(#glow)"/>
+        <g id="shineLayer" opacity="0">
+          <path d="M860 435 A100 100 0 0 1 860 235 A100 100 0 0 1 860 435 A120 120 0 0 0 860 675 A120 120 0 0 0 860 435"
+                fill="none" stroke="url(#shine)" stroke-width="46" stroke-linecap="round"/>
+          <polygon points="1080,235 1165,235 1115,415 1175,415 1045,690 1078,495 1015,495" fill="url(#shine)"/>
+        </g>
+      </g>
+
+      <circle id="spark" r="11" fill="#fff" filter="url(#glow)" opacity="0"/>
+
+      <g clip-path="url(#titleClip)">
+        <text id="title" x="957" y="812" text-anchor="middle" fill="#eaf2ff"
+              font-family="Plus Jakarta Sans, Segoe UI, sans-serif" font-weight="800" font-size="62" letter-spacing="40">HARI LISTRIK NASIONAL</text>
+      </g>
+      <rect id="barRed" x="957" y="842" width="0" height="7" fill="#e5202e"/>
+      <rect id="barWhite" x="957" y="849" width="0" height="7" fill="#f4f6fb"/>
+
+      <text id="tagline" x="957" y="922" text-anchor="middle" fill="#cfe0ff" opacity="0"
+            font-family="Plus Jakarta Sans, Segoe UI, sans-serif" font-weight="600" font-size="38">Energi untuk Semua, Kemandirian bagi Indonesia</text>
+      <text id="dates" x="957" y="985" text-anchor="middle" fill="#ffd21f" opacity="0"
+            font-family="JetBrains Mono, Consolas, monospace" font-weight="500" font-size="24" letter-spacing="8">27 OKTOBER 1945 · 2026</text>
+
+      <rect id="flash" width="1920" height="1080" fill="#f2fbff" opacity="0" pointer-events="none"/>
+    </svg>
+  </div>
+
+  <div class="bar">
+    <button id="play" type="button">Putar ulang</button>
+    <input id="scrub" type="range" min="0" max="5" step="0.01" value="0" aria-label="Posisi waktu animasi">
+    <span class="time" id="time">0.00 / 5.00 s</span>
+    <label class="loop" for="loop"><input id="loop" type="checkbox"> Ulangi terus</label>
+  </div>
+  <p class="note">Logo orisinal untuk tema HLN ke-81, bukan logo resmi PLN atau Kementerian ESDM. Angka 8 tergambar dari aliran listrik di kabel, lalu angka 1 menyambar sebagai petir.</p>
+</div>
+
+<script>
+(() => {
+  const T = 5;
+  const $ = id => document.getElementById(id);
+  const NS = "http://www.w3.org/2000/svg";
+  const CX = 957, CY = 455;
+
+  const clamp01 = x => Math.max(0, Math.min(1, x));
+  const seg = (t, a, b) => clamp01((t - a) / (b - a));
+  const easeOut = x => 1 - Math.pow(1 - x, 3);
+  const easeInOut = x => x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
+  const easeOutBack = x => { const c1 = 1.70158, c3 = c1 + 1; return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2); };
+
+  const wire = $("wire"), spark = $("spark"), eightDraw = $("eightDraw"), eightColor = $("eightColor");
+  const boltClip = $("boltClipRect"), flash = $("flash"), halo = $("halo"), mark = $("mark");
+  const titleClip = $("titleClipRect"), title = $("title"), barRed = $("barRed"), barWhite = $("barWhite");
+  const tagline = $("tagline"), dates = $("dates"), shineLayer = $("shineLayer"), shineGrad = $("shine");
+
+  const eightLen = eightDraw.getTotalLength();
+  eightDraw.style.strokeDasharray = eightLen;
+  const wireLen = 860;
+  wire.style.strokeDasharray = wireLen;
+
+  const rings = [0, .12, .26].map(() => {
+    const c = document.createElementNS(NS, "circle");
+    c.setAttribute("cx", CX); c.setAttribute("cy", CY);
+    $("rings").appendChild(c); return c;
+  });
+
+  const sparks = Array.from({ length: 30 }, (_, i) => {
+    const c = document.createElementNS(NS, "circle");
+    $("sparks").appendChild(c);
+    const a = i * 2.39996 + .3;
+    return { el: c, dx: Math.cos(a), dy: Math.sin(a), dist: 260 + ((i * 97) % 11) * 42, r: 2.5 + (i % 4) * 1.4, delay: (i % 5) * .03 };
+  });
+
+  function render(t) {
+    // 1. current runs along the wire into the centre of the 8
+    const pw = easeInOut(seg(t, .05, .7));
+    wire.style.strokeDashoffset = wireLen * (1 - pw);
+    wire.setAttribute("opacity", 1 - seg(t, 1.0, 1.5));
+
+    // 2. the 8 draws itself, spark at its head
+    const pe = easeInOut(seg(t, .7, 1.4));
+    eightDraw.style.strokeDashoffset = eightLen * (1 - pe);
+    eightDraw.setAttribute("opacity", 1 - seg(t, 1.55, 2.0) * .999);
+    let sx = null, sy = null;
+    if (t > .05 && t < .7) { sx = pw * 860; sy = 435; }
+    else if (t >= .7 && t < 1.42) { const p = eightDraw.getPointAtLength(eightLen * pe); sx = p.x; sy = p.y; }
+    if (sx !== null) { spark.setAttribute("cx", sx); spark.setAttribute("cy", sy); spark.setAttribute("opacity", .95); }
+    else spark.setAttribute("opacity", 0);
+
+    // 3. the 1 strikes down as lightning
+    const pb = seg(t, 1.35, 1.55);
+    boltClip.setAttribute("height", 480 * easeOut(pb));
+    const flicker = t > 1.55 && t < 1.8 ? (Math.sin(t * 90) > 0 ? 1 : .55) : 1;
+    $("bolt").setAttribute("opacity", flicker);
+
+    // 4. flash, colour fill, punch, rings, sparks
+    const f = t < 1.52 ? 0 : t < 1.57 ? seg(t, 1.52, 1.57) * .85 : .85 * (1 - easeOut(seg(t, 1.57, 2.0)));
+    flash.setAttribute("opacity", f);
+    eightColor.setAttribute("opacity", easeOut(seg(t, 1.5, 1.9)));
+    halo.setAttribute("opacity", .9 * easeOut(seg(t, 1.5, 2.3)) * (0.9 + 0.1 * Math.sin(t * 4)));
+    const s = t < 1.55 ? 1 : 1.06 - .06 * easeOutBack(seg(t, 1.55, 2.15));
+    mark.setAttribute("transform", `translate(${CX} ${CY}) scale(${s}) translate(${-CX} ${-CY})`);
+
+    rings.forEach((c, i) => {
+      const p = seg(t, 1.55 + i * .12, 2.6 + i * .12);
+      c.setAttribute("r", 60 + 760 * easeOut(p));
+      c.setAttribute("stroke-width", 6 * (1 - p) + .5);
+      c.setAttribute("opacity", p > 0 && p < 1 ? .55 * (1 - p) : 0);
+    });
+    sparks.forEach(sp => {
+      const p = seg(t, 1.55 + sp.delay, 2.7 + sp.delay);
+      const d = sp.dist * easeOut(p);
+      sp.el.setAttribute("cx", CX + sp.dx * (120 + d));
+      sp.el.setAttribute("cy", CY + sp.dy * (120 + d) * .8);
+      sp.el.setAttribute("r", sp.r * (1 - p * .6));
+      sp.el.setAttribute("opacity", p > 0 && p < 1 ? 1 - p : 0);
+    });
+
+    // 5. title, merah-putih bar, theme line, dates
+    const pt = easeOut(seg(t, 2.15, 2.95));
+    titleClip.setAttribute("width", 1000 * pt);
+    title.setAttribute("letter-spacing", 40 - 26 * pt);
+    const pr = easeOut(seg(t, 2.6, 3.15));
+    [barRed, barWhite].forEach(b => { b.setAttribute("x", CX - 260 * pr); b.setAttribute("width", 520 * pr); });
+    const pg = easeOut(seg(t, 3.0, 3.6));
+    tagline.setAttribute("opacity", pg);
+    tagline.setAttribute("transform", `translate(0 ${24 * (1 - pg)})`);
+    const pd = easeOut(seg(t, 3.5, 4.05));
+    dates.setAttribute("opacity", pd);
+    dates.setAttribute("letter-spacing", 14 - 6 * pd);
+
+    // 6. a final sheen across the mark
+    const ps = seg(t, 4.1, 4.8);
+    shineLayer.setAttribute("opacity", ps > 0 && ps < 1 ? 1 : 0);
+    shineGrad.setAttribute("gradientTransform", `translate(${600 + 700 * easeInOut(ps)} 0) skewX(-20)`);
+  }
+
+  // capture mode: ?t=2.4 renders one still frame at full window size
+  const qt = new URLSearchParams(location.search).get("t");
+  if (qt !== null) {
+    document.body.classList.add("capture");
+    const draw = () => render(Math.min(T, parseFloat(qt) || 0));
+    draw();
+    if (document.fonts) document.fonts.ready.then(draw);
+    return;
+  }
+
+  const playBtn = $("play"), scrub = $("scrub"), timeEl = $("time"), loopEl = $("loop");
+  let t = 0, playing = false, last = 0;
+  const show = () => { render(t); scrub.value = t; timeEl.textContent = `${t.toFixed(2)} / ${T.toFixed(2)} s`; };
+
+  function tick(now) {
+    if (!playing) return;
+    t += (now - last) / 1000; last = now;
+    if (t >= T) {
+      if (loopEl.checked) t = 0;
+      else { t = T; playing = false; playBtn.textContent = "Putar ulang"; }
+    }
+    show();
+    if (playing) requestAnimationFrame(tick);
+  }
+  function play(from) {
+    if (from !== undefined) t = from;
+    if (t >= T) t = 0;
+    playing = true; last = performance.now(); playBtn.textContent = "Jeda";
+    requestAnimationFrame(tick);
+  }
+  playBtn.addEventListener("click", () => {
+    if (playing) { playing = false; playBtn.textContent = "Putar"; }
+    else play(t >= T ? 0 : t);
+  });
+  scrub.addEventListener("input", () => { playing = false; playBtn.textContent = "Putar"; t = parseFloat(scrub.value); show(); });
+
+  const reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduce) { t = T; show(); }
+  else {
+    t = T; show(); // complete frame first, then play from the start
+    (document.fonts ? document.fonts.ready : Promise.resolve()).then(() => setTimeout(() => play(0), 300));
+  }
+})();
+</script>
+
+</body>
+</html>
